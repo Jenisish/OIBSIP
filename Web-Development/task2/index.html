@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<htmlc lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            
+        }
+
+        header {
+            align-items: center;
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    margin: 0;
+    padding: 0;
+    border-bottom: none; 
+}
+hr {
+    display: none; 
+}
+.gradient-font {
+  background: linear-gradient(to right, white, rgb(58, 58, 58));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+        #main {
+            display: flex;
+            margin: 25px;
+        }
+
+        #message img {
+            height: 20px;
+            filter: invert(100%);
+        }
+
+        #contact a {
+            margin: auto auto auto 10px;
+            color: rgb(235, 235, 235);
+        }
+
+        #part{
+            margin-left: auto;
+        }
+        #part1 p{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #social {
+            display: flex;
+            list-style: none;
+            margin: 15px;
+            padding: 10px;
+        }
+
+        #social li {
+            margin-left: 10px;
+        }
+
+        #social li a {
+            color: rgb(233, 232, 232);
+        }
+
+        #profile {
+            margin-top: 220px;
+            text-align: center;
+        }
+        #profile img{
+            height: 220px;
+            
+        }
+        section#part1{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        section#part1 p{
+            font-family: 'Prompt', sans-serif;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+        section#part1 h6{
+            color : linear-gradient(to right, white, black);
+            
+            font-weight: lighter;
+            font-family: 'Ysabeau Office', sans-serif;
+
+
+            text-align: center;
+            margin:auto;
+            
+            font-size: 122px;
+        }
+        #motto{
+            margin-left: 100px;
+            text-align: center;
+            
+        }
+        #project{
+            display: inline-block;
+    font-size: 22px;
+    margin-top: 85px;
+    margin-left: 112px;
+    margin-bottom: 45px;
+    padding: 15px;
+        }
+        #project input[type="button"]{
+            font-family: 'Ysabeau Office', sans-serif;;
+            border-radius: 30px;
+            border: 2px solid black;
+            color:rgb(198, 196, 196);
+            width: 219px;
+    font-size: 27px;
+    height: 64px;
+    background: rgb(32, 32, 32);
+        }
+        
+        section#part2{
+            height: auto;
+            background-color: rgb(39, 39, 39);
+        }
+        #interest{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #image1 img , #image2 img , #image3 img {
+            margin: 75px 10px;
+            width: 400px;
+            height: 200px;
+        }
+        #part3 p#work {
+            text-align: center;
+            font-size: 33px;
+        }
+        #skill{
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-evenly;
+            
+            
+        }
+    #impact1 {
+        border-radius: 30px;
+    border: 1px solid grey;
+    background-color: rgb(39, 39, 39);
+    display: inline-block;
+    margin-left: 93px;
+    margin-top: 44px;
+    padding-top: 116px;
+    height: 322px;
+    width: 435px;
+    padding-right: 10px;
+    font-size: 10px;
+    }
+    
+    #impact2{
+        border-radius: 30px;
+    border: 1px solid grey;
+    background-color: rgb(39, 39, 39);
+    margin-left: 43px;
+    margin-top: 44px;
+    padding-top: 116px;
+    height: 322px;
+    width: 435px;
+    padding-right: 10px;
+    font-size: 10px;
+}
+    
+    #impact3{
+        border-radius: 30px;
+    border: 1px solid grey;
+    background-color: rgb(39, 39, 39);
+    display: inline-block;
+    margin-left: 43px;
+    margin-top: 44px;
+    margin-right: 43px;
+    padding-top: 116px;
+    height: 322px;
+    width: 435px;
+    padding-right: 10px;
+    font-size: 10px;
+
+    }
+    #impact4{
+        border-radius: 30px;
+    border: 1px solid grey;
+    background-color: rgb(39, 39, 39);
+    display: inline-block;
+    margin-right: 93px;
+    margin-top: 44px;
+    padding-top: 116px;
+    height: 322px;
+    width: 435px;
+    padding-right: 10px;
+    font-size: 10px;
+}
+    
+        .big{
+            text-align: center;
+            color: rgb(215, 212, 212);
+            font-size: 21px;
+        }
+        .small{
+            margin: 32px;
+            padding: 5px;
+            font-size: 13px;
+            color: rgb(166, 166, 166);
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+        }
+        footer h6{
+            font-size: 35px;
+            font-family: 'Ysabeau Office', sans-serif;
+            color: white;
+            text-align: center;
+        }
+        #talk a {
+            border-radius: 30px;
+            width: 200px;
+            height: 75px;
+            background: rgb(57, 56, 56);
+            font-size: 25px;
+            display: inline-block;
+            border: 2px solid rgb(42, 42, 42);
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        #talk a p{
+            color: rgb(181, 181, 181);
+            text-align: center;
+        }
+        #talk a p img{
+            height: 20px;
+            filter: invert(100%); 
+        }
+        #talk{
+            border-radius: 10px;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+       
+    </style>
+    </head>
+    <body>
+        <header>
+            <div id="main">
+                <div id="message">
+                    <img src="img/message.png" alt="Message Icon">
+                </div>
+                <div id="contact">
+                    <a href="mailto:mulpurujenisish@gmail.com" target="_blank">hello@jenisish.design</a>
+                </div>
+            </div>
+            <div id="part">
+                <ul id="social">
+                    <li><a href="https://www.linkedin.com/in/mulpuru-jenisish-306996250/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Jenisish" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/_asce.__/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </header>
+        <hr>
+        <section id="part1">
+            <div id="profile">
+                <img src="img/prof.png" alt="Profile Image">
+
+            </div>
+            <div>
+                <p>Hi, I'm Jenisish 👋🏻</p>
+            </div>
+            <div id="motto">
+                <h6 class="gradient-font" >
+                    A web designer and developer.
+                </h6>
+            </div>
+            <div id="project">
+                <input type="button" value="My Projects">
+            </div>
+        </section>
+        <section id="part2">
+            <div id="interest">
+                <div id="image1"><img src="img/google.png" alt></div>
+                <div id="image2"><img src="img/amazon.png" alt></div>
+                <div id="image3"><img src="img/microsoft.png" alt></div>
+            </div>
+        </section>
+        <section id="part3">
+            <div>
+                <p class="gradient-font" id="work">Collaborating with brands and agencies to create impactful
+                    results </p>
+            </div>
+            <div id="skill">
+                <div id="impact1">
+                    <p class="big">UX & UI</p>
+                    <p class="small">Designing interfaces that are intutive , efficient , and
+                        enjoyable</p>
+                </div>
+                <div id="impact2">
+                    <p class="big">DSA</p>
+                    <p class="small"> DSA is a field of computer science that focuses on organizing and manipulating data efficiently and developing algorithms to solve computational problems. </p>
+                </div>
+                <div id="impact3">
+                    <p class="big">Design & Creative</p>
+                    <p class="small">Crafting visually stunning designs that connect with your
+                        audience</p>
+                </div>
+                <div id="impact4">
+                    <p class="big">Development</p>
+                    <p class="small">Bringing your vision to life with the latest technology
+                        and design trends</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                 <h6 class="gradient-font">Tell me about your next project</h6>
+                </div>
+           <div id="talk">
+            <a href="https://www.linkedin.com/in/mulpuru-jenisish-306996250/" target="_blank"><p>Get in touch <img src="img/message.png" alt=""></p></a>
+        </div>
+        </footer>
+       </body>
+    </html>

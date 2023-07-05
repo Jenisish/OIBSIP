@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(231, 186, 151);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            
+        }
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-top: 0;
+            color: rgb(128, 128, 128);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #conversionForm div {
+            margin-bottom: 15px;
+        }
+
+        input[type="number"],
+        select {
+            
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: rgb(166, 227, 234);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            
+            border-radius: 5px;
+            
+            background-color: rgb(166, 227, 234);
+            cursor: horizontal;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(93, 176, 93);
+            columns: rgb(255, 255, 255);
+            
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: green;
+        }
+    </style>
+ <script>
+        function convertTemperature() {
+  var degree = document.getElementById("degree").value;
+  var type = document.getElementById("type").value;
+  var result = document.getElementById("result");
+
+  if (type === "Celsius") {
+    result.value = convertToCelsius(degree);
+  } else if (type === "Fahrenheit") {
+    result.value = convertToFahrenheit(degree);
+  } else if (type === "Kelvin") {
+    result.value = convertToKelvin(degree);
+  }
+}
+
+function convertToCelsius(degree) {
+  var celsius = parseFloat(degree);
+  var convertedDegree = ""; 
+  convertedDegree = celsius.toFixed(2) + "°C";
+  return convertedDegree;
+}
+
+function convertToFahrenheit(degree) {
+  var celsius = parseFloat(degree);
+  var fahrenheit = (celsius * 9) / 5 + 32;
+  var convertedDegree = "";
+  convertedDegree = fahrenheit.toFixed(2) + "°F";
+  return convertedDegree;
+}
+
+function convertToKelvin(degree) {
+  var celsius = parseFloat(degree);
+  var kelvin = celsius + 273.15;
+  var convertedDegree = "";
+  convertedDegree = kelvin.toFixed(2) + "K";
+  return convertedDegree;
+}
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>
+            Temperature Converter
+        </h2>
+        <div>
+            <form id="conversionForm">
+                <div>
+                    <label for="degree">Degree : </label>
+                    <input type="number" name="degree" id="degree" />
+                </div>
+                <div>
+                    <label for="type">Type : </label>
+                    <select name="temp" id="type">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="result">Result : </label>
+                    <input type="text" id="result" readonly />
+                </div>
+                <input type="button" value="Convert" onclick="convertTemperature()" />
+            </form>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>

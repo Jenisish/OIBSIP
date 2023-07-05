@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Quisquam sed voluptas quos iusto molestias dicta vitae accusamus nostrum saepe
+    reprehenderit modi illum esse aut quaerat, eaque aliquam fugit? Reprehenderit quasi, amet nobis
+    labore magni molestias, sequi esse eaque iure placeat quia eius ipsa facilis neque modi illo
+    adipisci nihil exercitationem totam culpa in ut sit distinctio. Nisi quidem quae atque, sequi ex
+    cupiditate inventore earum ut perferendis">
+    <meta name="keywords" content="HTML , CSS , WEB DEVELOPMENT">
+    <title>Fitness Freak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header img {
+            height: 70px;
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        header {
+            display: flex;
+            background-color: black;
+        }
+
+        #name {
+            margin-top: 25px;
+            margin-right: 109px;
+            color: rgb(71, 149, 222);
+        }
+
+        #navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar ul li {
+            display: inline-block;
+            border: 2px solid;
+            margin-top: 15px;
+            margin-left: 79px;
+            padding: 15px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: rgb(232, 222, 147);
+        }
+
+        #navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #search {
+            padding: 13px;
+            margin: 30px 5px 0px auto;
+        }
+
+        img {
+            max-height: 100%;
+            width: auto;
+        }
+
+        section.part1 {
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            text-align: left;
+            background: rgb(0, 0, 0);
+        }
+
+        section.part1 div#image img {
+            width: 100%;
+            height: auto;
+        }
+
+        section.part1 div#text {
+            flex-basis: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section.part1 div#text h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            margin: 50px 0;
+        }
+
+        section.part1 div#text p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 20px;
+        }
+
+        section.part1 div#text a {
+            display: inline-block;
+            margin: 40px auto;
+            border: 2px solid red;
+            border-radius: 23px;
+            padding: 21px;
+            font-size: 31px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        section.part2 div#price h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        section.part2 div#price p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 26px;
+            margin: 42px auto;
+        }
+
+        section.part2 div#collection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        section.part2 div#collection div#image1 img,
+        section.part2 div#collection div#image2 img,
+        section.part2 div#collection div#image3 img {
+            border-radius: 20px;
+            height: 360px;
+            width: 360px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            display: flex;
+            background: rgb(0, 0, 0);
+            height: 150px;
+        }
+
+        footer img {
+            height: 70px;
+            filter: invert(100%);
+        }
+
+        footer div#link {
+            display: flex;
+            margin-left: auto;
+            align-items: center;
+        }
+
+        footer div#name {
+            margin-left: 20px;
+            color: white;
+        }
+
+        #last{
+            display: flex;
+        }
+
+        .nam1{
+            margin: 10px;
+        }
+        @media (max-width: 768px) {
+            #name {
+                margin-right: 20px;
+            }
+
+            #navbar ul li {
+                margin-left: 20px;
+            }
+
+            section.part1 div#text {
+                padding: 10px;
+            }
+
+            section.part1 div#text h1 {
+                font-size: 30px;
+                margin: 30px 0;
+            }
+
+            section.part1 div#text p {
+                margin-top: 10px;
+            }
+
+            section.part1 div#text a {
+                margin: 20px auto;
+            }
+
+            section.part2 div#collection {
+                padding: 10px;
+            }
+
+            section.part2 div#collection div#image1 img,
+            section.part2 div#collection div#image2 img,
+            section.part2 div#collection div#image3 img {
+                height: 250px;
+                width: 250px;
+            }
+
+            footer div#link {
+                margin-right: 20px;
+            }
+
+            footer div#name {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="logo">
+        <img src="img/logo.png" alt>
+    </div>
+    <div id="name">
+        <h2>Fitness Freak</h2>
+    </div>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="search">
+        <form action="backend.php">
+            <input type="search" placeholder="Search" class="MySearch">
+        </form>
+    </div>
+</header>
+<main>
+    <section class="part1">
+        <div id="text">
+            <h1>Best Choice For Pro's</h1>
+            <p>Get Your Dream Body</p>
+            <a href="http://google.com" target="_blank">Get Started</a>
+        </div>
+        <div id="image">
+            <img src="img/photo.jpg" alt="Reload Required">
+        </div>
+    </section>
+    <section class="part2">
+        <div id="price">
+            <h2>Starting at $10 per month</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima quae molestiae doloribus
+                officiis quibusdam fugiat alias illum, ex ullam labore libero aut at voluptates, maiores placeat
+                consequatur unde pariatur, sint in assumenda ratione impedit! Ea minus ut ullam quasi a, unde
+                facilis ducimus. Quisquam sed voluptas quos iusto molestias dicta vitae accusamus nostrum saepe
+                reprehenderit modi illum esse aut quaerat, eaque aliquam fugit? Reprehenderit quasi, amet nobis
+                labore magni molestis, sequi esse eaque iure placeat quia eius ipsa facilis neque modi illo
+                adipisci nihil exercitationem totam culpa in ut sit distinctio. Nisi quidem quae atque, sequi ex
+                cupiditate inventore earum ut perferendis iepsa facilis necessitatibus repellendus nihil veniam
+                voluptates! Obcaecati pariatur ipsum repellendus eaque quam error debitis, tempore asperiores
+                alias, illum cupiditate perspiciatis culpa deserunt unde esse qui ullam similique quis magni,
+                possimus a ad! Fugiat accusantium iste nisi suscipit aperiam officia cupiditate vero similique
+                eligendi iure vitae quia, enim a eos facere ad temporibus possimus? Harum facilis, quidem
+                blanditiis delectus libero suscipit. Tempora, deserunt? Nisi recusandae aperiam odit accusantium
+                corporis labore dolores eaque modi quo iste!
+            </p>
+        </div>
+        <div id="collection">
+            <div id="image1">
+                <img src="img/1.jpg" alt="Reload Required">
+            </div>
+            <div id="image2">
+                <img src="img/2.jpg" alt="Reload Required">
+            </div>
+            <div id="image3">
+                <img src="img/3.jpg" alt="Reload Required">
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div id="last">
+    <div id="logo" class="name1">
+        <img src="img/logo.png" alt>
+    </div>
+    <div id="name" class="name1">
+        <h2>Fitness Freak</h2>
+    </div></div>
+    <div id="link">
+        <div id="social1"><a href="https://www.youtube.com/"><img src="img/youtube.png" alt=""></a></div>
+        <div id="social2"><a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a></div>
+        <div id="social3"><a href="https://www.linkedin.com/"><img src="img/linkdin.png" alt=""></a></div>
+        <div id="social4"><a href="https://www.twitter.com/"><img src="img/twitter.png" alt=""></a></div>
+    </div>
+</footer>
+</body>
+</html>
